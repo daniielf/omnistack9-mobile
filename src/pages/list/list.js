@@ -2,17 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, FlatList, Image, SafeAreaView, Item } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
-export default function ListPage() {
+export default function ListPage({ navigation }) {
   const [spotList, setSpotList] = useState([]);
   const [techList, setTechList] = useState([]);
 
   useEffect(() => {
+    setTechList(navigation.state.params.techs)
     loadSpotList();
-    loadTechList();
-
-    // console.log(spotList.filter((spot) => { return spot.techs.indexOf('Angular') != -1 }));
-    let list = spotList.filter(spot => spot.techs.indexOf('Angular') != -1);
-    // console.log(list);
   }, []);
 
   async function loadSpotList() {
@@ -37,7 +33,7 @@ export default function ListPage() {
     <SafeAreaView style={styles.container}>
       <Text style={styles.pageTitle}>Spots List</Text>
         <ScrollView>
-          { techList.map((tech) => {
+          { techList.length > 0 && spotList.length > 0 && techList.map((tech) => {
             return (
                 <View style={styles.techRow}>
                   <Text style={styles.techRowTitle}>{ tech }</Text>

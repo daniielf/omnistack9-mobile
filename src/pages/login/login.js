@@ -8,44 +8,29 @@ const ID_VALUE_KEY_STRING = 'userIdKey';
 
 export default function LoginPage({ navigation }) {
   const [emailInput, setEmailInput] = useState('');
-
+  const [techsInput, setTechsInput] = useState('');
 
   useEffect(() => {
     try {
-      AsyncStorage.getItem(EMAIL_VALUE_KEY_STRING).then(() => {
-        navigation.navigate('ListPage');
+      AsyncStorage.getItem(EMAIL_VALUE_KEY_STRING).then((doc) => {
+        setEmailInput(doc);
       });
-    // retrieveUserLocalData();
     } catch {
       console.log('NO LOCAL DATA STORED');
     }
   }, []);
 
-  function setInputValue(value) {
-    setEmailInput(value);
-  }
-
   async function handleSubmit() {
     storeUserEmail();
-    // storeUserID('d12345678');    
-    // storeUserEmail();
-    navigation.navigate('ListPage');
+    navigation.navigate('ListPage', { techs: techsInput.split(',').map(elem => elem.trim())});
   }
 
   async function storeUserEmail() {
-    AsyncStorage.setItem(EMAIL_VALUE_KEY_STRING, emailInput).then(() => {
-      AsyncStorage.getItem(EMAIL_VALUE_KEY_STRING).then((doc) => console.log('Stored email:', doc))
-    }).catch((err) => console.log(err));
+    AsyncStorage.setItem(EMAIL_VALUE_KEY_STRING, emailInput).catch((err) => console.log(err));
   }
 
   function storeUserID(user_id) {
     AsyncStorage.setItem(ID_VALUE_KEY_STRING, user_id);
-  }
-
-  async function retrieveUserLocalData() {
-    // const userCredential = await AsyncStorage.getAllKeys(EMAIL_VALUE_KEY_STRING);
-    // console.log('USER CRED:', userCredential);  
-    // if (userCredential) setEmailInput(userCredential);
   }
 
   return (
@@ -56,8 +41,16 @@ export default function LoginPage({ navigation }) {
           autoCapitalize="none" 
           keyboardType="email-address" 
           style={styles.loginInput} 
-          onChangeText={setInputValue}
+          value={emailInput}
+          onChangeText={setEmailInput}
           placeholder="Email"></TextInput>
+
+        <TextInput 
+          autoCorrect={false} 
+          style={styles.loginInput} 
+          onChangeText={setTechsInput}
+          value={techsInput}
+          placeholder="Technlogies"></TextInput>
 
           <TouchableOpacity style={styles.loginButton} onPress={handleSubmit}>
             <Text style={styles.loginButtonText}>ENTRAR</Text>
