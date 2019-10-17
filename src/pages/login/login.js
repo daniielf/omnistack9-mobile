@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, AsyncStorage, TouchableOpacity, Text, View, TextInput, Button } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, View, TextInput } from 'react-native';
+
+import AsyncStorage from '@react-native-community/async-storage';
 
 const EMAIL_VALUE_KEY_STRING = 'userEmailKey';
 const ID_VALUE_KEY_STRING = 'userIdKey';
@@ -10,7 +12,9 @@ export default function LoginPage({ navigation }) {
 
   useEffect(() => {
     try {
-    navigation.navigate('ListPage');
+      AsyncStorage.getItem(EMAIL_VALUE_KEY_STRING).then(() => {
+        navigation.navigate('ListPage');
+      });
     // retrieveUserLocalData();
     } catch {
       console.log('NO LOCAL DATA STORED');
@@ -22,15 +26,16 @@ export default function LoginPage({ navigation }) {
   }
 
   async function handleSubmit() {
-    // storeUserEmail();
+    storeUserEmail();
     // storeUserID('d12345678');    
+    // storeUserEmail();
     navigation.navigate('ListPage');
   }
 
   async function storeUserEmail() {
-    // await AsyncStorage.setItem(EMAIL_VALUE_KEY_STRING, emailInput).then((data) => {
-    //   console.log('User data stored successfully', data);
-    // }).catch((err) => console.log(err));
+    AsyncStorage.setItem(EMAIL_VALUE_KEY_STRING, emailInput).then(() => {
+      AsyncStorage.getItem(EMAIL_VALUE_KEY_STRING).then((doc) => console.log('Stored email:', doc))
+    }).catch((err) => console.log(err));
   }
 
   function storeUserID(user_id) {

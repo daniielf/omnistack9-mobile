@@ -1,0 +1,45 @@
+dependencies: \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/node_modules/react-native/React/CxxBridge/NSDataBigString.mm \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Target\ Support\ Files/React-Core/React-Core-prefix.pch \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/node_modules/react-native/React/CxxBridge/NSDataBigString.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Headers/Public/React-cxxreact/cxxreact/JSBigString.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Exception.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Conv.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Headers/Public/DoubleConversion/double-conversion/double-conversion.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Headers/Public/DoubleConversion/double-conversion/utils.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Demangle.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/FBString.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/CppAttributes.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Portability.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/CPortability.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Traits.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/hash/Hash.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Utility.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/functional/ApplyTuple.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/functional/Invoke.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Preprocessor.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/hash/SpookyHashV1.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/hash/SpookyHashV2.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/lang/Bits.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/ConstexprMath.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/lang/Assume.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/portability/Builtins.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/lang/Exception.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/memory/Malloc.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/memory/detail/MallocImpl.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Expected.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Likely.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Optional.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Unit.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/lang/ColdClass.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/Range.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/portability/Constexpr.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/portability/String.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/CpuId.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/detail/RangeCommon.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Headers/Public/glog/glog/logging.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Headers/Public/glog/glog/log_severity.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Headers/Public/glog/glog/vlog_is_on.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/detail/RangeSse42.h \
+  /Users/danielf/Documents/daniel/projects/omnistack/mobile/AirDnD/ios/Pods/Folly/folly/portability/Math.h
